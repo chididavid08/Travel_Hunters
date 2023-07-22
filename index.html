@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in and sign up - Travel Hunters</title>
+    <link rel="icon" href="Images/Travelicon.jpeg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            border: {
+              1: "1px",
+              0.9: "0.9px",
+            },
+            height: {
+              36: "36rem",
+              42: "42rem",
+            },
+            position: {
+              20: "20rem",
+              22: "22rem",
+              17: "17rem",
+            },
+            width: {
+              23: "23rem",
+              7.6: "7.6rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex flex-row">
+      <div class="md:w-1/2">
+        <div class="flex flex-col p-32 pt-48">
+          <!-- Header Section -->
+          <div class="flex flex-col items-center">
+            <div>
+              <p class="font-bold text-4xl text-zinc-700">
+                Log In to your account
+              </p>
+            </div>
+            <div class="flex flex-row mt-6 space-x-7 ml-9">
+              <div class="rounded-full border-[1px] border-gray-500 w-10 h-10">
+                <img
+                  src="Images/icons8-google-48.png"
+                  alt=""
+                  class="w-9 h-9 p-1"
+                />
+              </div>
+              <div class="rounded-full border-[1px] border-gray-500 w-10">
+                <img
+                  src="Images/icons8-facebook-24.png"
+                  alt=""
+                  class="w-10 h-9 p-1 pr-1 pt-1.5"
+                />
+              </div>
+              <div class="rounded-full border-[1px] border-gray-500 w-10">
+                <img
+                  src="Images/icons8-twitter-48.png"
+                  alt=""
+                  class="w-10 h-10 p-1"
+                />
+              </div>
+            </div>
+            <div class="flex mt-3 pl-10 w-full justify-center">
+              <p class="text-gray-500 text-md">Or Log in with your email</p>
+            </div>
+          </div>
+          <!-- Form Section -->
+          <div class="flex flex-col mt-7">
+            <div
+              class="flex flex-row bg-gray-200 py-5 p-3 space-x-4 rounded-sm"
+            >
+              <div>
+                <img
+                  src="Images/icons8-envelope-32.png"
+                  alt=""
+                  class="h-6 mt-1 pl-3"
+                />
+              </div>
+              <div><p class="text-xl text-gray-500">Email address</p></div>
+            </div>
+
+            <div
+              class="flex flex-row bg-gray-200 p-3 py-5 pl-6 space-x-4 mt-5 rounded-sm"
+            >
+              <div>
+                <img
+                  src="Images/icons8-padlock-24.png"
+                  alt=""
+                  class="w-7 h-6 mt-1"
+                />
+              </div>
+              <div><p class="text-xl text-gray-500">Password</p></div>
+            </div>
+
+            <div class="flex flex-col items-center mt-2">
+              <p class="text-gray-500 text-md">Forgot Password?</p>
+              <hr class="border-black -border-[0.9px] w-[7.6rem]" />
+            </div>
+
+            <div class="flex w-full justify-center">
+              <div class="bg-emerald-600 mt-10 w-56 text-center rounded-md">
+                <button
+                  type="button"
+                  class="text-3xl font-semibold text-white mt-1 p-1 py-3 mb-2"
+                >
+                  Log In
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <div class="absolute w-[42rem]">
+          <img
+            src="Images/Paper jet.webp"
+            alt=""
+            class="w-full"
+            class="relative"
+          />
+          <p class="absolute top-64 left-32 text-4xl text-white font-semibold">
+            Welcome Back Travelers!
+          </p>
+          <p
+            class="absolute top-[20rem] left-40 text-xl text-white w-[23rem] text-center"
+          >
+            Please log in to your TRAVEL HUNTER account with the given details
+            to continue.
+          </p>
+          <p class="absolute bottom-[22rem] left-64 text-white text-xl">
+            New Here? Sign Up
+          </p>
+
+          <div
+            class="absolute border-2 border-white w-60 pl-4 pr-4 bottom-[17rem] left-56 rounded-md"
+          >
+            <button
+              type="button"
+              class="text-white text-3xl p-3 px-6 pl-11 pb-4 font-semibold"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
